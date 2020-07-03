@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["007_types.ts"]
+  "files": ["008_type_alias.ts"]
 }
