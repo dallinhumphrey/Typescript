@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["012_conditional_operators.ts"]
+  "files": ["013_compound_conditionals.ts"]
 }
