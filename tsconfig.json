@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["015_functions.ts"]
+  "files": ["016_function_args.ts"]
 }
