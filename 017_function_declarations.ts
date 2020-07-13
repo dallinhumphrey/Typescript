@@ -1,3 +1,7 @@
+console.log(fullName("Dallin", "Humphrey"));
+// console.log(otherFullName("Dallin", "Humphrey"));
+// console.log(thirdFullName("Dallin", "Humphrey"));
+
 // Function declaration
 function fullName(first: string, last: string): string {
   return first + " " + last;
