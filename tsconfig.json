@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["017_function_declarations.ts"]
+  "files": ["018_immediately_invoked.ts"]
 }
