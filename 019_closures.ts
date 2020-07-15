@@ -28,3 +28,29 @@
 // nameAgain();
 
 // ***********************************
+
+function lineup() {
+  var nowFighting: number = 1;
+
+  return {
+    nextFighter() {
+      nowFighting++;
+    },
+    currentFighter() {
+      return nowFighting;
+    },
+  };
+}
+
+let fighters = lineup();
+
+console.log(fighters.currentFighter());
+fighters.nextFighter();
+console.log(fighters.currentFighter());
+fighters.nextFighter();
+console.log(fighters.currentFighter());
+fighters.nextFighter();
+console.log(fighters.currentFighter());
+
+let mage = lineup();
+console.log(mage.currentFighter);
