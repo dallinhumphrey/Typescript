@@ -1,9 +1,6 @@
-var names = ["Dallin", "Kort", "Link", "lily"];
-var counter = 0;
-(function () {
-    for (var name_1 in names) {
-        counter++;
-    }
-})();
-console.log(counter);
+var fullName;
+fullName = function (first, last) {
+    return first + " " + last;
+};
+console.log(fullName("Dallin", "Humphrey"));
 //# sourceMappingURL=018_immediately_invoked.js.map
