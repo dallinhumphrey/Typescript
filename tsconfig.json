@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["021_inheritance.ts"]
+  "files": ["022_objects.ts"]
 }
