@@ -2,5 +2,5 @@
   "compilerOptions": {
     "sourceMap": true
   },
-  "files": ["023_interfaces.ts"]
+  "files": ["024_interfaces.ts"]
 }
