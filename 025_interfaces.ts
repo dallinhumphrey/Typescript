@@ -1,48 +1,67 @@
-interface User {
-  email: string;
-  firstName?: string;
-  lastName?: string;
-}
+namespace Blog {
+  export interface IPost {
+    title: string;
+    body: string;
+  }
 
-class Admin {
-  role: string;
-  constructor(public email: string) {
-    this.role = "Admin";
+  export class Post implements IPost {
+    title: string;
+    body: string;
+
+    constructor(post: IPost) {
+      this.title = post.title;
+      this.body = post.body;
+    }
+
+    printPost() {
+      console.log(this.title);
+      console.log(this.body);
+    }
   }
 }
 
-function profile(user: User): string {
-  return `Welcome, ${user.email}`;
-}
-
-var joe = new Admin("joe@example.com");
-console.log(joe.role);
-
-// Direct implementation
-interface IPost {
-  title: string;
-  body: string;
-}
-
-class Post implements IPost {
-  title: string;
-  body: string;
-
-  constructor(post: IPost) {
-    this.title = post.title;
-    this.body = post.body;
+namespace Content {
+  export interface IPost {
+    title: string;
+    body: string;
+    slug: string;
+    seoKeywords: string;
   }
 
-  printPost() {
-    console.log(this.title);
-    console.log(this.body);
+  export class Post {
+    title: string;
+    body: string;
+    slug: string;
+    seoKeywords: string;
+
+    constructor(post: IPost) {
+      this.title = post.title;
+      this.body = post.body;
+      this.slug = post.slug;
+      this.seoKeywords = post.seoKeywords;
+    }
+
+    printPost() {
+      console.log(this.title);
+      console.log(this.body);
+      console.log(this.slug);
+      console.log(this.seoKeywords);
+    }
   }
 }
 
-var post = new Post({
+var blogPost = new Blog.Post({
   title: "My Great Title",
   body: "Something interesting for sure!",
 });
-console.log(post.title);
-console.log(post.body);
-post.printPost();
+
+blogPost.printPost();
+
+var contentPost = new Content.Post({
+  title: "My Great Title",
+  body: "Something interesting for sure!",
+  slug: "my-great-post",
+  seoKeywords: "any, words",
+});
+
+contentPost.printPost();
