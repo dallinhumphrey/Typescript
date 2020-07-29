@@ -10,4 +10,22 @@ function profile(user) {
 }
 var joe = new Admin("joe@example.com");
 console.log(joe.role);
+var Post = /** @class */ (function () {
+    function Post(post) {
+        this.title = post.title;
+        this.body = post.body;
+    }
+    Post.prototype.printPost = function () {
+        console.log(this.title);
+        console.log(this.body);
+    };
+    return Post;
+}());
+var post = new Post({
+    title: "My Great Title",
+    body: "Something interesting for sure!"
+});
+console.log(post.title);
+console.log(post.body);
+post.printPost();
 //# sourceMappingURL=025_interfaces.js.map
