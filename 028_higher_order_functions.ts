@@ -12,3 +12,5 @@ function loadPage(q: () => void) {
 }
 
 loadPage(dbQuery);
+
+// a higher order function is a function that takes a call back as an arguement.
