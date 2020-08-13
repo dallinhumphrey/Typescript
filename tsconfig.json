@@ -7,5 +7,5 @@
     "emitDecoratorMetadata": true,
     "sourceMap": true
   },
-  "files": ["030_decorator_introduction.ts"]
+  "files": ["031_class_decorators.ts"]
 }
